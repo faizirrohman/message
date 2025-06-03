@@ -1,37 +1,51 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #ffd6e0, #ffe6f0);
+  background: linear-gradient(to bottom, #fff1f5, #ffe4ec);
   font-family: 'Quicksand', sans-serif;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
   text-align: center;
+  color: #4a4a4a;
+  overflow-x: hidden;
 }
+
 .container {
-  max-width: 700px;
-  padding: 40px;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px 30px;
+  max-width: 750px;
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 1.2s ease-in-out;
 }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 h1 {
   font-family: 'Great Vibes', cursive;
-  font-size: 40px;
-  color: #e91e63;
-  margin-bottom: 30px;
+  font-size: 42px;
+  color: #d81b60;
+  margin-bottom: 25px;
 }
+
 .message {
-  font-size: 20px;
-  line-height: 1.8;
-  color: #444;
-  min-height: 300px;
+  font-size: 19px;
+  line-height: 1.7;
   white-space: pre-wrap;
+  text-align: left;
+  min-height: 300px;
+  animation: fadeIn 1.5s ease-in;
 }
+
 .signature {
   margin-top: 30px;
   font-style: italic;
-  color: #c2185b;
   font-weight: bold;
+  color: #ad1457;
+  font-size: 16px;
 }
